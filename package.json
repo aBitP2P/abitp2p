@@ -1,38 +1,16 @@
 {
-  "name": "abitp2p",
-  "version": "1.2.0",
-  "description": "",
-  "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=esnext --minify --packages=external --outfile=dist/index.js",
-    "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
-  },
+  "name": "abitp2p-workspace",
+  "module": "index.ts",
   "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bip32": "^5.0.1",
-    "bitcoinjs-lib": "^7.0.1",
-    "dotenv": "^17.4.2",
-    "drizzle-orm": "^0.45.2",
-    "ecpair": "^3.0.2",
-    "mysql2": "^3.24.4",
-    "qrcode": "^1.5.4",
-    "telegraf": "^4.16.3",
-    "tiny-secp256k1": "^2.2.4"
-  },
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "devDependencies": {
-    "@types/node": "^26.5.0",
-    "@types/qrcode": "^1.5.6",
-    "drizzle-kit": "^0.31.10",
-    "esbuild": "^0.28.2",
-    "tsx": "^4.23.13",
-    "typescript": "^7.0.2"
+    "@types/bun": "latest"
   },
-  "allowScripts": {
-    "esbuild@0.18.20": true,
-    "esbuild@0.25.12": true,
-    "esbuild@0.28.2": true
+  "peerDependencies": {
+    "typescript": "^7"
   }
 }

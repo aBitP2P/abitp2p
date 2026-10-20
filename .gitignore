@@ -8,3 +8,4 @@ sqlite.db
 dist/
 repomix-output.xml
 drizzle/
+old_src/

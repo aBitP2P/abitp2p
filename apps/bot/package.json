@@ -1,0 +1,12 @@
+{
+  "name": "@abitp2p/bot",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "@abitp2p/types": "workspace:*",
+    "telegraf": "^4.16.3"
+  }
+}

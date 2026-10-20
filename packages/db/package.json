@@ -1,0 +1,12 @@
+{
+  "name": "@abitp2p/db",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "drizzle-orm": "^0.30.0",
+    "mysql2": "^3.9.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.14"
+  }
+}
